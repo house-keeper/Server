@@ -1,0 +1,37 @@
+'use strict';
+const express = require('express');
+const router = express.Router();
+const request = require('request');
+const subscriptionKey = "a540b083deb14790b0d6c932fc99d4b0";
+
+const uriBase = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/identify";
+
+var body =
+`
+{
+    "personGroupId": "jsm",
+    "faceIds": [
+        "7042dfe6-0ea7-4f06-acb1-a43809dc3082",
+    ],
+    "confidenceThreshold": 0.01
+}
+`;
+
+const options = {
+    uri: uriBase,
+    body: body,
+    headers: {
+      'Content-Type': 'application/json',
+      'Ocp-Apim-Subscription-Key' : subscriptionKey
+    }
+  };
+
+//1 대 다수 식별을 사용하여 사용자 얼굴의 가장 가까운 일치를 사람 그룹에서 찾음.
+//identify전 detect해서 faceId 필요
+request.post(options, (error, response, body) => {
+  if (error) {
+    console.log('Error: ', error);
+    return;
+  }
+  console.log(JSON.stringify(JSON.parse(body), null, '  ')); //json형식으로 log출력
+});
