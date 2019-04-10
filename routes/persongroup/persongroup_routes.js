@@ -1,3 +1,4 @@
+/*
 var express = require('express');
 var router = express.Router();
 
@@ -11,3 +12,4 @@ router.use('/train', require('./train'));
 
 
 module.exports = router;
+*/
