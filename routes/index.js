@@ -5,5 +5,6 @@ var router = express.Router();
 //router.use('/persongroup', require('./persongroup/persongroup_routes'));
 router.use('/s3', require('./s3/s3_routes'));
 router.use('/setting', require('./setting/setting_routes'));
+router.use('/window', require('./window/window_routes'));
 
 module.exports = router;
