@@ -8,3 +8,4 @@ router.use('/setting', require('./setting/setting_routes'));
 router.use('/window', require('./window/window_routes'));
 
 module.exports = router;
+
