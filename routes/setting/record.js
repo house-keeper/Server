@@ -53,5 +53,22 @@ router.post('/', upload.fields([{ name: 'file', maxCount: 1 }]), async (req, res
 });
 
 
+// 녹음 상용구 삭제
+router.delete('/:idx', async (req, res, next) => {
+
+    let deleteRecordQuery = `DELETE FROM record WHERE idx = ?`;
+    let result = {};
+
+    try {
+        let deleteRecordResult = await db.Query(deleteRecordQuery,[req.params.idx]);
+        result.message = "Success Delete Record";    
+
+    } catch (error) {
+        return next(error);
+    }
+    return res.status(result);
+});
+
+
 
 module.exports = router;    

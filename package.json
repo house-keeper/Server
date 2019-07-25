@@ -13,6 +13,7 @@
     "cors": "^2.8.5",
     "crypto-promise": "^2.1.0",
     "debug": "~2.6.9",
+    "ejs": "^2.6.2",
     "express": "~4.16.0",
     "express-session": "^1.16.2",
     "express-validation": "^1.0.2",
