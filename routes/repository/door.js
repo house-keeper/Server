@@ -11,10 +11,11 @@ const db = require('../../module/pool.js');
 const upload = require('../../module/multer');
 
 
-// 창문 기록 보여주기 
+
+// 현관 기록 보여주기 
 router.get('/', async (req, res, next) => {
     
-    let getRecordQuery = `SELECT * FROM window ORDER BY idx DESC LIMIT 10`;
+    let getRecordQuery = `SELECT * FROM door ORDER BY idx DESC LIMIT 10`;
     let innerResult = [];
     let result = {};
     
@@ -33,10 +34,10 @@ router.get('/', async (req, res, next) => {
 });
 
 
-// 창문 기록 삭제
+// 현관 기록 삭제
 router.delete('/:idx', async (req, res, next) => {
 
-    let deleteRecordQuery = `DELETE FROM window WHERE idx = ?`;
+    let deleteRecordQuery = `DELETE FROM door WHERE idx = ?`;
     let result = {};
 
     try {
@@ -48,6 +49,5 @@ router.delete('/:idx', async (req, res, next) => {
     }
     return res.status(result);
 });
-
 
 module.exports = router; 
