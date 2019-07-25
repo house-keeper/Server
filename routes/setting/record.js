@@ -39,11 +39,11 @@ router.get('/', async (req, res, next) => {
 // 녹음 상용구 추가
 router.post('/', upload.fields([{ name: 'file', maxCount: 1 }]), async (req, res, next) => {
 
-    let postRecordQuery = `INSERT INTO record(file) VALUES(?)`;
+    let postRecordQuery = `INSERT INTO record(file,fileName) VALUES(?,?)`;
     let result = {};
 
     try {
-        let postRecordResult = await db.Query(postRecordQuery,[req.files['file'][0].location]);
+        let postRecordResult = await db.Query(postRecordQuery,[[req.files['file'][0].location],req.body.fileName]);
         result.message = "Success Post Record";    
 
     } catch (error) {
