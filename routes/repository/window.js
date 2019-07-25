@@ -20,7 +20,7 @@ router.get('/', async (req, res, next) => {
     
     try {
         let getRecordResult = await db.Query(getRecordQuery);
-        result.message = "Success Get Record";    
+        result.message = "Success Get Window Repository";    
 
         for(let i=0;i<getRecordResult.length;i++){
             innerResult.push(getRecordResult[i]);
@@ -41,7 +41,7 @@ router.delete('/:idx', async (req, res, next) => {
 
     try {
         let deleteRecordResult = await db.Query(deleteRecordQuery,[req.params.idx]);
-        result.message = "Success Delete Record";    
+        result.message = "Success Delete Window Repository";    
 
     } catch (error) {
         return next(error);
