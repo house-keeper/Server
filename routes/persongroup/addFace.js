@@ -2,21 +2,21 @@
 const express = require('express');
 const router = express.Router();
 const request = require('request');
-const subscriptionKey = "a540b083deb14790b0d6c932fc99d4b0";
+const subscriptionKey = "6bc77c1f5ad742a2b57a1f0f809ec7d0";
 
 // TODO: 해당 personId 그때그때 변경되도록 수정
-const personId = "8b5bd6bf-bf8c-4aa9-98ea-8c4f925b9451"
+const personId = "c6b9b35c-248b-4355-a1f4-18a43be6c103"
 
 // personGroupId=jsm
 // TODO: 해당 personGroupId 그때그때 변경되도록 수정
-const uriBase = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/persongroups/jsm/persons/"+
+const uriBase = "https://koreacentral.api.cognitive.microsoft.com/face/v1.0/persongroups/housekeeper/persons/"+
 personId+"/persistedFaces";
 
 // TODO: body의 이미지 url 그때그때 변경되도록 수정
 var body =
 `
 {
-    "url": "https://image.mycelebs.com/celeb/new/sq/292948_sq_1495198784.jpg"
+    "url": "https://img.seoul.co.kr/img/upload/2019/01/27/SSI_20190127204804_V.jpg"
 }
 `;
 

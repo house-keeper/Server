@@ -2,16 +2,16 @@
 const express = require('express');
 const router = express.Router();
 const request = require('request');
-const subscriptionKey = "a540b083deb14790b0d6c932fc99d4b0";
+const subscriptionKey = "6bc77c1f5ad742a2b57a1f0f809ec7d0";
 // personGroupId=jsm
 // TODO: 해당 personGroupId 그때그때 변경되도록 수정
-const uriBase = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/persongroups/jsm/persons";
+const uriBase = "https://koreacentral.api.cognitive.microsoft.com/face/v1.0/persongroups/housekeeper/persons";
 
 // TODO: 해당 person의 name 그때그때 변경되도록 수정
 var body =
 `
 {
-    "name": "outsider1",
+    "name": "yuseon",
     "userData": "User-provided data attached to the person."
 }
 `;

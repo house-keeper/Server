@@ -2,16 +2,16 @@
 const express = require('express');
 const router = express.Router();
 const request = require('request');
-const subscriptionKey = "a540b083deb14790b0d6c932fc99d4b0";
+const subscriptionKey = "6bc77c1f5ad742a2b57a1f0f809ec7d0";
 
-const uriBase = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/identify";
+const uriBase = "https://koreacentral.api.cognitive.microsoft.com/face/v1.0/identify";
 
 var body =
 `
 {
-    "personGroupId": "jsm",
+    "personGroupId": "housekeeper",
     "faceIds": [
-        "7042dfe6-0ea7-4f06-acb1-a43809dc3082",
+        "c6b9b35c-248b-4355-a1f4-18a43be6c103",
     ],
     "confidenceThreshold": 0.01
 }
