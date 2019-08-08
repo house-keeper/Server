@@ -4,7 +4,7 @@ const router = express.Router();
 const request = require('request');
 const subscriptionKey = "6bc77c1f5ad742a2b57a1f0f809ec7d0";
 //personGroupId=jsm
-const uriBase = "https://koreacentral.api.cognitive.microsoft.com/face/v1.0/persongroups/housekeeper/persons";
+const uriBase = "https://koreacentral.api.cognitive.microsoft.com/face/v1.0/persongroups/housekeeper-python/persons";
 
 const options = {
     uri: uriBase,

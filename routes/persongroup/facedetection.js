@@ -13,7 +13,7 @@ const uriBase = "https://koreacentral.api.cognitive.microsoft.com/face/v1.0/dete
 var body =
     `
     {
-        "url": "https://img.seoul.co.kr/img/upload/2019/01/27/SSI_20190127204804_V.jpg"
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqQCE1CWRmVyoTOHdDxqhX4pMUPotx8jOSC0tj0URNjvqVGdZEQ"
     }
     `;
 

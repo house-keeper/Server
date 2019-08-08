@@ -20,6 +20,7 @@ router.get('/', async (req, res, next) => {
     
     try {
         let getRecordResult = await db.Query(getRecordQuery);
+        console.log(getRecordResult);
         result.message = "Success Get Window Repository";    
 
         for(let i=0;i<getRecordResult.length;i++){

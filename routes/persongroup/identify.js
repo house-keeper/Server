@@ -9,9 +9,9 @@ const uriBase = "https://koreacentral.api.cognitive.microsoft.com/face/v1.0/iden
 var body =
 `
 {
-    "personGroupId": "housekeeper",
+    "personGroupId": "housekeeper-python",
     "faceIds": [
-        "c6b9b35c-248b-4355-a1f4-18a43be6c103",
+        "71fd3a05-29cd-4e85-993d-fb2bd521b9f9",
     ],
     "confidenceThreshold": 0.01
 }

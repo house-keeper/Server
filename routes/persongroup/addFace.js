@@ -9,8 +9,7 @@ const personId = "c6b9b35c-248b-4355-a1f4-18a43be6c103"
 
 // personGroupId=jsm
 // TODO: 해당 personGroupId 그때그때 변경되도록 수정
-const uriBase = "https://koreacentral.api.cognitive.microsoft.com/face/v1.0/persongroups/housekeeper/persons/"+
-personId+"/persistedFaces";
+const uriBase = "https://koreacentral.api.cognitive.microsoft.com/face/v1.0/persongroups/housekeeper/persons/" + personId + "/persistedFaces";
 
 // TODO: body의 이미지 url 그때그때 변경되도록 수정
 var body =
