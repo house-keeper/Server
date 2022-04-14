@@ -6,7 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "async": "^3.1.0",
+    "async": "^3.2.2",
     "await": "^0.2.6",
     "aws-sdk": "^2.437.0",
     "cookie-parser": "~1.4.3",
